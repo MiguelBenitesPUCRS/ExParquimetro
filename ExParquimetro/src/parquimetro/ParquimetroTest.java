@@ -28,6 +28,9 @@ public class ParquimetroTest {
 		assertEquals(291, parq.getSaldo());
 	}
 
+	
+	
+	///// Acertar este erro...
 	@Test
 	public void testGetSaldo() {
 		double actual = parq.getSaldo();
