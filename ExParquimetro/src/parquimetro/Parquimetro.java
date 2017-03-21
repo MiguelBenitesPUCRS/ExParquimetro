@@ -8,7 +8,6 @@ public class Parquimetro {
 		this.saldo = 0;
 	}
 	
-	
 	// Permite inserir moedas no parquimetro (soma no saldo)
 	// Valores possíveis: 1, 5, 10, 25, 50 e 100 (1 real)
 	// Gera InvalidValueException no caso de valor inválido
@@ -35,24 +34,21 @@ public class Parquimetro {
 		default:
 			valor +=0;
 			break;		
-		
-	}
-	
-		
+		}	
 	}
 	
 	// Retorna o saldo acumulado no parquimetro
-	public double getSaldo(){ 
+	public int getSaldo(){ 
 		return (saldo);
 	}
 	
 	// Emite um ticket de 2 reais se houver saldo disponível.
 	// Retorna true se a operação foi possível
 	public boolean emiteTicket(){
-		if (getSaldo() < 2){
+		if (getSaldo() < 200){
 			return (false);
 		}
-		saldo -= 2;
+		saldo -= 200;
 		return true;		
 	}
 	
